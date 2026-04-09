@@ -1,0 +1,52 @@
+# ============================================================
+#  Sports Bot Configuration
+#  COPY THIS FILE TO config.py AND FILL IN YOUR SETTINGS
+# ============================================================
+
+# --- Email Sender ---
+EMAIL_FROM = "your-email@gmail.com"
+EMAIL_SUBJECT = "JUST BS"
+
+# --- SMTP Config ---
+# Gmail example — see README for other providers
+SMTP_HOST = "smtp.gmail.com"
+SMTP_PORT = 587
+SMTP_USER = "your-email@gmail.com"
+SMTP_PASS = "xxxx xxxx xxxx xxxx"  # Use an App Password, not your real password
+
+# --- User Management ---
+# Use manage.py to add/remove users and their team subscriptions:
+#   python manage.py add-user your-email@example.com
+#   python manage.py subscribe your-email@example.com NBA Lakers
+#   python manage.py list-users
+
+# --- Scheduling ---
+# The cron job (see README) controls when this runs.
+# Recommended: daily at 8 AM   →   0 8 * * *
+
+# ── Reddit Pulse ────────────────────────────────────────────────────────────
+# See REDDIT_PULSE.md for setup instructions
+REDDIT_CLIENT_ID     = "your_client_id"
+REDDIT_CLIENT_SECRET = "your_client_secret"
+REDDIT_USER_AGENT    = "just-bs-personal/1.0"
+
+TEAM_SUBREDDITS = {
+    # NBA
+    "Lakers":   "lakers",
+    "Warriors": "warriors",
+    "Celtics":  "bostonceltics",
+    "Knicks":   "nyknicks",
+    # NFL
+    "Chiefs":   "kansascitychiefs",
+    "Eagles":   "eagles",
+    "Patriots": "Patriots",
+    # MLB
+    "Dodgers":  "dodgers",
+    "Yankees":  "NYYankees",
+    "Braves":   "Braves",
+    "Mets":     "NewYorkMets",
+    # Add more as needed
+}
+
+# Set to False to disable Reddit Pulse entirely
+REDDIT_PULSE_ENABLED = True

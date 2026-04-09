@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+.venv/
+env/
+
+# Logs
+*.log
+sports_bot.log
+
+# Database
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Config (contains credentials)
+config.py
+
+# Archives
+*.tar
+*.zip
+*.tar.gz
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.claude/
+claude.local.json
+settings.local.json
+
+# OS
+.DS_Store
+Thumbs.db

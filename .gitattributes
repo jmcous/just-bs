@@ -1,0 +1,22 @@
+# Auto-normalize line endings for all text files
+* text=auto
+
+# Python files
+*.py text eol=lf
+*.py diff=python
+
+# Shell scripts
+*.sh text eol=lf
+
+# Markdown
+*.md text eol=lf
+*.markdown text eol=lf
+
+# JSON/YAML
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# Don't normalize binary files
+*.db binary
+*.sqlite3 binary
